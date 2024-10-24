@@ -1,0 +1,45 @@
+{
+  "name": "feeds-viz",
+  "repository": "https://github.com/jsteelz/feeds-viz",
+  "packageManager": "pnpm@8.15.5",
+  "scripts": {
+    "start": "next dev",
+    "build": "next build",
+    "test:eslint": "eslint --max-warnings=0 --color '{src,test}/**/*.{js,ts,tsx}'",
+    "test:prettier": "prettier -c '{src,test}/**/*.{css,js,ts,tsx}'",
+    "test:ts": "tsc --pretty --noEmit",
+    "prettier": "prettier --write '{src,test}/**/*.{css,js,ts,tsx}'"
+  },
+  "dependencies": {
+    "mapbox-gl": "^3.4.0",
+    "next": "^14.2.15",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-map-gl": "^7.1.7",
+    "react-select": "^5.8.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^2.7.21",
+    "@types/node": "^18.19.39",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.0.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.5.2"
+  },
+  "browserslist": {
+    "production": [
+      "> 3%",
+      "last 2 versions",
+      "Firefox ESR",
+      "not dead",
+      "not IE 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ]
+  }
+}
